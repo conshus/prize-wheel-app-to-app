@@ -19,7 +19,10 @@ This demo can be used to giveaway prizes at events.
 
 ## Getting started
 * <a href="https://githubbox.com/conshus/prize-wheel-app-to-app" target="_blank">Deploy (open in a new tab/window)</a> the application to [CodeSandbox.io](https://codesandbox.io).
+* Sign into CodeSandbox.io if not already.
+* Click `Fork` in the upper right corner.
 * In the project window of CodeSandbox.io's terminal section (towards the bottom), click the icon (>_) to show the menu to create a new terminal window or press <kbd>CTRL `</kbd>.
+
 ![Screenshot showing new terminal menu](codesandbox-io-new-terminal.jpg "Screenshot showing new terminal menu")
 * In the terminal, run the command:
 ```bash
