@@ -18,7 +18,7 @@ This demo can be used to giveaway prizes at events.
 * Shoelace QR Code Web Component [documentation](https://shoelace.style/components/qr-code)
 
 ## Getting started
-* <a href="https://githubbox.com/Vonage-Community/demo-client_sdk-javascript-prizewheel_voice_app_to_app" target="_blank">Deploy (opens in a new window)</a> the application to [CodeSandbox.io](https://codesandbox.io).
+* <a href="https://githubbox.com/conshus/prize-wheel-app-to-app" target="_blank">Deploy (opens in a new window)</a> the application to [CodeSandbox.io](https://codesandbox.io).
 * In the project window of CodeSandbox.io's terminal section (towards the bottom), click the icon (>_) to show the menu to create a new terminal window or press <kbd>CTRL `</kbd>.
 ![Screenshot showing new terminal menu](codesandbox-io-new-terminal.jpg "Screenshot showing new terminal menu")
 * In the terminal, run the command:
