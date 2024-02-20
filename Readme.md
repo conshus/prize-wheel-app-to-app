@@ -22,6 +22,7 @@ This demo can be used to giveaway prizes at events.
 * Sign into CodeSandbox.io if not already.
 * Click `Fork` in the upper right corner.
 * In the project window of CodeSandbox.io's terminal section (towards the bottom), click the icon (>_) to show the menu to create a new terminal window or press <kbd>CTRL `</kbd>.
+> **_NOTE:_** if there is a `start` tab. Click the x to close it.
 
 ![Screenshot showing new terminal menu](codesandbox-io-new-terminal.jpg "Screenshot showing new terminal menu")
 * In the terminal, run the command:
@@ -29,4 +30,8 @@ This demo can be used to giveaway prizes at events.
 npm run setup
 ```
 * Follow the steps of the setup.
+* Then run the command:
+```bash
+npm run start
+```
 * That's it! The application should be up and running.
