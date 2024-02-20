@@ -1,0 +1,45 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A demo using Vonage JS Client SDK for prize giveaways.">
+
+    <title>App to App Prize Wheel Demo</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@vonage/client-sdk@1.2.1/dist/vonageClientSDK.min.js"></script>
+  </head>
+  <body>
+    <main>
+      <section id="loginContainer" style="width:300px;">
+        <form id="login">
+          <label for="username">Your Player Name: </label>
+          <input name="username" id="username" type="text" placeholder="username" aria-labelledby="login" required disabled>
+          <button type="submit" id="submitButton">Enter</button>
+        </form>
+        <div id="errorStatus"></div>
+      </section>
+      <section id="appToAppContainer">
+        <p>
+          Your player name: <b><span id="username-placeholder"></span></b>
+        </p>
+        <ul>
+          <li>make sure your volume is turned up!</li>
+        </ul>
+        <button type="button" id="answer" disabled>Answer</button>
+        <button type="button" id="hangup">Hang Up</button>
+        <div id="status">Good luck!</div>
+      </section>
+    </main>
+    <footer>
+        Create your account today and use code 24DWSF10 for €10 free credit: <a href="https://vonage.dev/devweek24" target="_blank">https://vonage.dev/devweek24</a>!
+    </footer>
+    <script type="module" src="/participant.js" defer></script>
+  </body>
+</html>

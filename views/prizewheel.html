@@ -1,0 +1,60 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A demo using Vonage JS Client SDK for prize giveaways.">
+
+    <title>App to App Prize Wheel Demo</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- ******* Load Vonage JS Client SDK from a CDN ****** -->
+    <script src="https://cdn.jsdelivr.net/npm/@vonage/client-sdk@1.2.1/dist/vonageClientSDK.min.js"></script>
+
+    <!-- ******* Load Web Components from a CDN ****** -->
+    <script type="module" src="https://unpkg.com/@vonage/prize-wheel@latest/prize-wheel.js?module"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.13.1/cdn/shoelace.js"></script>
+
+  </head>
+  <body>
+    <main>
+      <section id="loginContainer" style="width:300px;">
+        <form id="login">
+          <label for="username">Username: </label>
+          <input name="username" id="username" type="text" placeholder="username" aria-labelledby="login" required disabled>
+          <button type="submit" id="submitButton">Login</button>
+        </form>
+        <div id="errorStatus"></div>
+      </section>
+      <section id="appToAppContainer">
+        <button id="qr-code-button">show QR code</button>
+        <prize-wheel></prize-wheel>
+        <button id="spin">spin</button>
+        <button id="reset">reset</button>
+      </section>
+    </main>    
+    <dialog id="winner-dialog">
+      <form method="dialog">
+        <p>You've won <strong id="winner-name"></strong>!</p>
+            <p id="status">Calling ...</p>
+        <button type="button" id="hangup">Hang Up</button>
+        <button>Close dialog</button>
+      </form>
+    </dialog>    
+    <dialog id="qr-code-dialog">
+      <form method="dialog">
+        <sl-qr-code size=500></sl-qr-code>
+        <button>Close dialog</button>
+      </form>
+    </dialog>
+    <footer>
+      Create your account today and use code 24DWSF10 for €10 free credit: <a href="https://vonage.dev/devweek24" target="_blank">https://vonage.dev/devweek24</a>!
+    </footer>
+    <script type="module" src="/prizewheel.js" defer></script>
+  </body>
+</html>
